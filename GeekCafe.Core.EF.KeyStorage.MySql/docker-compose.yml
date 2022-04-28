@@ -1,0 +1,45 @@
+# keep your environment clean
+# prior to running this config, prune networks that aren't needed using
+# docker network prune -a
+
+# create a local docker network for the services to communicate on
+# e.g. docker network create localdev
+
+version: "3.7"
+networks: 
+  geekcafe-network: 
+    external: 
+      name: geekcafe-network # <- same name as you used in `docker network create name-here`
+
+#
+services: 
+  geekcafe-db:
+    image: mysql:5.7.20  # <- change version to suite you needs
+    command: ['--lower_case_table_names=1']
+    #command: --default-authentication-plugin=mysql_native_password
+    container_name: mysql-db-geekcafe
+    #restart: always
+    ports:
+      - 3306:3306  # <- port that is defined development repos for this project
+      - 22:22
+    networks:
+      - geekcafe-network      
+    environment:
+      MYSQL_DATABASE: geekcafe_keystore  
+      MYSQL_ROOT_PASSWORD: password
+      MYSQL_USER: geekcafe
+      MYSQL_PASSWORD: geekcafe           
+    volumes:       #<- uncomment and change the volume mappings below if needed
+      # you can use volume mounts to store the mysql data files on your local drive vs in a container
+      # if you store them in the container and later delete the container, the data is gone
+      # however if you store them on your local drive the data will remain
+      - geekcafe-db-volume:/var/lib/mysql
+      - geekcafe-db-volume:/var/lib/mysql-bk
+    
+
+networks: 
+  geekcafe-network:  # <- creates the network for you, so you don't have to
+
+volumes:
+  geekcafe-db-volume:
+  
