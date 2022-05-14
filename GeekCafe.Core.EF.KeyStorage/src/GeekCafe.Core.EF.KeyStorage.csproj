@@ -4,6 +4,14 @@
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
+    <Version>1.0.0</Version>
+    <Authors>Eric Wilson</Authors>
+    <Company>Geek Cafe LLC</Company>
+    <PackageId>GeekCafe.Core.EF.KeyStorage</PackageId>
+    <PackageIcon>GeekCafe.png</PackageIcon>
+    <Description>A base project for a database managed persistent key store</Description>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <PackageProjectUrl>http://github.com/geekcafe/GeekCafe.Core.EF.KeyStorage</PackageProjectUrl>
   </PropertyGroup>
 
   <ItemGroup>
@@ -13,5 +21,9 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.DataProtection.EntityFrameworkCore" Version="6.0.4" />
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.4" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Include="images\GeekCafe.png" Pack="true" PackagePath="\" />
   </ItemGroup>
 </Project>

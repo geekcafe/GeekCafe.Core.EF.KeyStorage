@@ -3,10 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 25.0.1700.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekCafe.Core.EF.KeyStorage", "GeekCafe.Core.EF.KeyStorage\GeekCafe.Core.EF.KeyStorage.csproj", "{C0ECC4A2-E21E-4980-8375-D0AAAF2418E7}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekCafe.Core.EF.KeyStorage", "GeekCafe.Core.EF.KeyStorage\src\GeekCafe.Core.EF.KeyStorage.csproj", "{C0ECC4A2-E21E-4980-8375-D0AAAF2418E7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekCafe.Core.EF.KeyStorage.MySql", "GeekCafe.Core.EF.KeyStorage.MySql\GeekCafe.Core.EF.KeyStorage.MySql.csproj", "{05936DFC-081F-4B11-8F58-6FB1175F1151}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GeekCafe.Core.EF.KeyStorage.MySql", "GeekCafe.Core.EF.KeyStorage.MySql\src\GeekCafe.Core.EF.KeyStorage.MySql.csproj", "{05936DFC-081F-4B11-8F58-6FB1175F1151}"
 EndProject
+
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +22,10 @@ Global
 		{05936DFC-081F-4B11-8F58-6FB1175F1151}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{05936DFC-081F-4B11-8F58-6FB1175F1151}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{05936DFC-081F-4B11-8F58-6FB1175F1151}.Release|Any CPU.Build.0 = Release|Any CPU
+		{92004550-0E27-48F8-9174-DA588290B3AD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{92004550-0E27-48F8-9174-DA588290B3AD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{92004550-0E27-48F8-9174-DA588290B3AD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{92004550-0E27-48F8-9174-DA588290B3AD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
