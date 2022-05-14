@@ -3,9 +3,9 @@
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
     <ImplicitUsings>enable</ImplicitUsings>
-    <Nullable>enable</Nullable>
-    <Version>1.0.0</Version>
+    <Nullable>enable</Nullable>    
     <Authors>Eric Wilson</Authors>
+    <Version>1.0.0</Version>
     <Company>Geek Cafe LLC</Company>
     <PackageId>GeekCafe.Core.EF.KeyStorage</PackageId>
     <PackageIcon>GeekCafe.png</PackageIcon>
